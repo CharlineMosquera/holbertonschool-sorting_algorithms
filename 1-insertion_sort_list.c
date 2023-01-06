@@ -10,7 +10,7 @@ void insertion_sort_list(listint_t **list)
 {
 	listint_t *head = NULL;
 
-	if (!*list || !(*list))
+	if (!list || !(*list))
 		return;
 
 	head = *list; /*first node of the list*/
