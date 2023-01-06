@@ -1,13 +1,13 @@
 #include "sort.h"
 
 /**
- * _swap - exchanges the values of two elements of type integer
+ * change_nodes - exchanges the values of two elements of type integer
  * @array: array
  * @a: integer
  * @b: integer
  * @size: size of the array
  */
-void _swap(int *array, int a, int b, size_t size)
+void change_nodes(int *array, int a, int b, size_t size)
 {
 	int temp;
 
@@ -36,11 +36,11 @@ int divide_array(int *array, int left, int right, size_t size)
 	{
 		if (array[j] < pivot)
 		{
-			_swap(array, i, j, size);
+			change_nodes(array, i, j, size);
 			i++;
 		}
 	}
-	_swap(array, i, right, size);
+	change_nodes(array, i, right, size);
 
 	return (i);
 }

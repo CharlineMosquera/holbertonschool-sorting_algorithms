@@ -24,9 +24,10 @@ void print_array(const int *array, size_t size);
 void print_list(const listint_t *list);
 void bubble_sort(int *array, size_t size);
 void insertion_sort_list(listint_t **list);
+void _swap(listint_t **node, listint_t **list);
 void selection_sort(int *array, size_t size);
 void quick_sort(int *array, size_t size);
-void _swap(int *array, int a, int b, size_t size);
+void change_nodes(int *array, int a, int b, size_t size);
 void quicksort_recursion(int *array, int left, int right, size_t size);
 int divide_array(int *array, int left, int right, size_t size);
 
